@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"vscode-icons-team.vscode-icons",
+		"rjyoung.vscode-modern-vhdl-support",
+		"hbohlin.vhdl-ls",
+		"johannesbonk.ghdl-interface",
+		
+	]
+}

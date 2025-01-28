@@ -1,0 +1,20 @@
+{
+	"files.autoSave": "afterDelay", // Salva automaticamente após um pequeno atraso
+	"files.autoSaveDelay": 3000, // D<efine o tempo em milissegundos (1 segundo)
+	"editor.tabSize": 2, // define o tamanho da tabulação
+	"editor.fontSize": 14,
+	"editor.rulers": [120], // define as linhas verticais
+	"editor.renderLineHighlight": "line", // define o estilo do realce da linha atual
+	"editor.fontLigatures": true,	//permite ligaduras de fonte para melhorar a legibilidade
+	"explorer.compactFolders": false, // define se as pastas são compactadas
+	"breadcrumbs.enabled": true, // define se o caminho no começo está habilitado
+	"breadcrumbs.filePath": "on", // define se o caminho no começo está habilitado
+	"breadcrumbs.showFunctions":true,
+	"breadcrumbs.showFiles": true,
+	"editor.insertSpaces": false, // define se a tabulação é feita com espaços ou tabs
+	// "editor.minimap.maxColumn": 60,    
+	"editor.minimap.renderCharacters": true,
+}
+
+
+
