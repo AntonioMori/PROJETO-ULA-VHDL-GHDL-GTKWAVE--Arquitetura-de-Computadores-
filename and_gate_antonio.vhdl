@@ -1,4 +1,5 @@
-library ieee; -- importanto biblioteca para manipulação de binários
+-- importanto biblioteca para manipulação de binários
+library ieee;
 use ieee.std_logic_1164.all;
 
 

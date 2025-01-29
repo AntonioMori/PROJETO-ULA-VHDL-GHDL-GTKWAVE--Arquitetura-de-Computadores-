@@ -39,6 +39,11 @@ Uma lista de comandos aprendidos
    ghdl -s and_gate_antonio.vhdl
    ```
 
+2. Realizar a compilação dos códigos para verificação de erros
+   ```bash
+   ghdl -a seu_código.vhdl
+   ```
+
 
 
 
