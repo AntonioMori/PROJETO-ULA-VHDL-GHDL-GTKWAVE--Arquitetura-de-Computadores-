@@ -65,7 +65,7 @@ begin
 		wait for 10 ns;
 
 		assert false report "Testbench executado!" severity note;
-
+		wait; -- ? Isso faz com que o processo pare aqui
 	end process;
 
 end comportamento_testbench;
