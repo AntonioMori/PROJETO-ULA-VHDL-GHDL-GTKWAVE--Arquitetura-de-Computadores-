@@ -72,7 +72,11 @@ isso irá testar o código em vhdl, mas para visualizarmos através do gtkwave p
 
 
 
-
+ ghdl -s and_gate_antonio.vhdl
+ ghdl -s and_gate_tb.vhdl
+ 
+ ghdl -a and_gate_antonio.vhdl
+ ghdl -a and_gate_tb.vhdl
 
 
 

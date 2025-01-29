@@ -12,7 +12,7 @@ end entity and_gate_tb;
 -- aqui iremos definir como será o comportamento do nosso testbench e qual o componente que ele irá testar
 architecture comportamento_testbench of and_gate_tb is
 	-- iremos testar o comportamento da entidade and_gate que é o nosso componente
-	component and_gate
+	component and_gate_antonio
 		port (
 			a_input : in std_logic;
 			b_input : in std_logic;
@@ -28,7 +28,7 @@ architecture comportamento_testbench of and_gate_tb is
 	-- agora iremos descrever o processo que irá simular o comportamento do nosso componente
 begin
 	--descrevemos qual sinal deve ser referente a qual entrada do nosso componente de teste
-	instancia_and_gate: and_gate port map (a_input => a_signal, b_input => b_signal, y_output => y_and_result);
+	instancia_and_gate: and_gate_antonio port map (a_input => a_signal, b_input => b_signal, y_output => y_and_result);
 	-- a input recebe o sinal vindo do a_signal
 	-- b input recebe o sinal vindo do b_signal
 	-- y_output => y_and_result: A saída y_output do componente and_gate será conectada ao sinal y_and_result	
