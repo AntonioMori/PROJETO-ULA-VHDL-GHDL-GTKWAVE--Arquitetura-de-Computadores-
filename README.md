@@ -30,54 +30,54 @@ main/
 
 ```
 
-## **Comandos Auxiliares**
-Uma lista de comandos aprendidos
 
 
-1. Realizar como se fosse uma build, ou debug do código para verificar usando ghdl
+## **Comandos Auxiliares**  
+Uma lista de comandos úteis para trabalhar com GHDL e simulações VHDL.
+
+---
+
+1. **Verifica a sintaxe do código VHDL**  
+   Este comando verifica se o código está corretamente escrito, mas **não realiza a compilação**.  
    ```bash
-   ghdl -s and_gate_antonio.vhdl
+   ghdl -s file.vhdl
    ```
-2. Realizar a compilação e **análise** dos códigos para verificação de erros
+
+2. **Compila e realiza a análise do código**  
+   Este comando realiza a **compilação** e a **análise** do código VHDL, verificando erros e criando arquivos intermediários.  
    ```bash
-   ghdl -a seu_código.vhdl
+   ghdl -a file.vhdl
    ```
-3. Elaborar e criar o nosso "design" de testbench
+
+3. **Elabora e cria o executável da testbench**  
+   O comando cria o executável da testbench, preparando-o para execução.  
    ```bash
    ghdl -e sua_testbench
    ```
-4. Para rodar o arquivo do nosso design e dar start na simulação
+
+4. **Executa a simulação**  
+   Com esse comando, você **roda** a simulação do testbench e verifica o resultado da execução.  
    ```bash
    ghdl -r sua_testbench
    ```
 
-isso irá testar o código em vhdl, mas para visualizarmos através do gtkwave precisamos converter para um arquivo tipo vcd, essa conversão é possibilitada pelo uso da extensão GHDL.
+---
 
-### para realizar a conversão vhdl para vcd de uma testbench
+### Para visualizar a simulação no GTKWave, é necessário converter a saída da testbench para o formato **VCD**. O GHDL facilita essa conversão.
 
-5. Realizando a conversão de uma testbench para um arquivo tipo vcd para visualização usando GtkWave
+---
+
+5. **Realiza a conversão da testbench para o formato VCD**  
+   Converte a simulação em VHDL para um arquivo **VCD**, que pode ser visualizado no **GTKWave**.  
    ```bash
    ghdl -r sua_testbench --vcd=and.vcd
    ```
 
-6. Abrindo o arquivo vcd com a testbench simulando o nosso and de maneira visual
+6. **Abre o arquivo VCD com o GTKWave**  
+   Após a conversão, abra o arquivo `.vcd` com o GTKWave para visualizar a simulação de forma gráfica.  
    ```bash
    gtkwave and.vcd
    ```
-
-
-
-
-
-
-
-
- ghdl -s and_gate_antonio.vhdl
- ghdl -s and_gate_tb.vhdl
- 
- ghdl -a and_gate_antonio.vhdl
- ghdl -a and_gate_tb.vhdl
-
 
 
 
