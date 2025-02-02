@@ -26,7 +26,7 @@ assets/  	                  		 # Arquivos estáticos como imagens, etc.
 
 main/
 ├── and_gate_antonio.vhdl        # Template principal
-├── favicon.ico                  # Favicon do site
+├── 
 
 ```
 
