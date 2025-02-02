@@ -1,0 +1,19 @@
+v 4
+file . "half_adder_antonio_tb.vhdl" "f671f5f6219f0394eef1e55ae8ba624b85f90bf9" "20250202015457.382":
+  entity half_adder_antonio_tb at 1( 0) + 0 on 49;
+  architecture estructure_architecture of half_adder_antonio_tb at 9( 156) + 0 on 50;
+file . "and_gate_tb2.vhdl" "3d9b805047e7a57fb46b82fb203fbbf926ddc252" "20250202014849.464":
+  entity and_gate_tb2 at 2( 47) + 0 on 41;
+  architecture estructure_architecture of and_gate_tb2 at 9( 182) + 0 on 42;
+file . "xor_gate_antonio_tb.vhdl" "a9eb58363fe591f668e0b27fd40702f2d3de734c" "20250202015156.314":
+  entity xor_gate_antonio_tb at 2( 66) + 0 on 45;
+  architecture estructure_architecture of xor_gate_antonio_tb at 10( 356) + 0 on 46;
+file . "xor_gate_antonio.vhdl" "b79f0cffa014678cc8825875709dc99a290be21e" "20250202015153.274":
+  entity xor_gate_antonio at 2( 66) + 0 on 43;
+  architecture data_flow of xor_gate_antonio at 15( 407) + 0 on 44;
+file . "and_gate.vhdl" "cb8c9a60cd09a3247f6a24022bc4406f0f4f5e5d" "20250202014839.477":
+  entity and_gate at 2( 22) + 0 on 39;
+  architecture data_flow of and_gate at 15( 343) + 0 on 40;
+file . "half_adder_antonio.vhdl" "04a0b7da7ef6d7fefc15520efab909d3bebbbe4e" "20250202015452.067":
+  entity half_adder_antonio at 2( 74) + 0 on 47;
+  architecture estrutual_architecture of half_adder_antonio at 15( 476) + 0 on 48;

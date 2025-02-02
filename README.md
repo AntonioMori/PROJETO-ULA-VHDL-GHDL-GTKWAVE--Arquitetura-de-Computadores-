@@ -78,23 +78,145 @@ Uma lista de comandos úteis para trabalhar com GHDL e simulações VHDL.
    ```bash
    gtkwave and.vcd
    ```
+ ---
+### O trecho a partir daqui foi gerado com inteligencia artificial 
 
 
+## **Architectures Styles in VHDL**
 
+### **1. Data Flow**
+O estilo **Data Flow** descreve o comportamento do circuito usando atribuições de sinais e expressões lógicas. Esse estilo é útil para representar diretamente equações booleanas sem a necessidade de um processo sequencial.
 
-### Java (JDK 8)
-<ol>
-    <li>Faça o download e instale o <a href="https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html" target="_blank" rel="noopener noreferrer">JDK 8</a> (talvez seja necessário criar uma conta, caso ainda não tenha.)</li>
-    <li>Crie a variável de ambiente <a href="https://confluence.atlassian.com/confbr1/configurando-a-variavel-java_home-no-windows-933709538.html" target="_blank" rel="noopener noreferrer">JAVA_HOME</a></li>
-    <li>Reinicie o seu terminal ou abra um novo e execute o comando <code>java -version</code>, se não retornar a versão instalada, reinicie o seu computador.</li>
-</ol>
+#### **Exemplo: Implementação de uma Porta AND**
+```vhdl
+library ieee;
+use ieee.std_logic_1164.all;
 
-### Hadoop
-<ol>
-    <li>Faça o download do arquivo <a href="https://github.com/steveloughran/winutils/blob/master/hadoop-2.7.1/bin/winutils.exe" target="_blank" rel="noopener noreferrer">winutils.exe</a> do Hadoop 2.7.1</li>
-    <li>Copie o arquivo winutils.exe para um diretório, como .</li>
-    <li>Crie a variável de ambiente HADOOP_HOME, passando o caminho <code>C:\hadoop</code></li>
-    <li>Edite a variável de ambiente Path e adicione <code>C:\hadoop\bin</code></li>
-    <li>Reinicie o terminal</li>
-</ol>
+entity and_gate is
+    port (
+        a, b : in std_logic;
+        y : out std_logic
+    );
+end entity;
+
+architecture data_flow of and_gate is
+begin
+    y <= a and b;
+end architecture data_flow;
+```
+
+#### **Simulação no GTKWave**
+Após compilar e executar a simulação com GHDL, você pode gerar um arquivo **VCD** para visualização no **GTKWave**.
+```bash
+ghdl -r sua_testbench --vcd=and.vcd
+```
+
+---
+
+### **2. Behavioral**
+O estilo **Behavioral** descreve o comportamento do circuito utilizando processos (`process`) e estruturas condicionais, como `if`, `case`, `loop`, etc. Ele é útil para implementar **máquinas de estado** e **algoritmos sequenciais**.
+
+#### **Exemplo: Implementação de uma Porta AND Usando Behavioral**
+```vhdl
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity and_gate is
+    port (
+        a, b : in std_logic;
+        y : out std_logic
+    );
+end entity;
+
+architecture behavioral of and_gate is
+begin
+    process(a, b)
+    begin
+        if (a = '1' and b = '1') then
+            y <= '1';
+        else
+            y <= '0';
+        end if;
+    end process;
+end architecture behavioral;
+```
+
+#### **Simulação no GHDL**
+```bash
+ghdl -a and_gate.vhdl
+ghdl -e and_gate
+ghdl -r and_gate --wave=and.ghw
+```
+O arquivo `and.ghw` pode ser aberto no **GTKWave**:
+```bash
+gtkwave and.ghw
+```
+
+---
+
+### **3. Structural**
+O estilo **Structural** descreve um circuito conectando componentes previamente definidos, semelhante ao uso de portas lógicas para construir circuitos mais complexos.
+
+#### **Exemplo: Implementação de um Half Adder Usando Structural**
+```vhdl
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity half_adder is
+    port (
+        a, b : in std_logic;
+        sum, carry : out std_logic
+    );
+end entity;
+
+architecture structural of half_adder is
+    component and_gate
+        port (
+            a, b : in std_logic;
+            y : out std_logic
+        );
+    end component;
+    
+    component xor_gate
+        port (
+            a, b : in std_logic;
+            y : out std_logic
+        );
+    end component;
+    
+    signal s_and, s_xor : std_logic;
+
+begin
+    u1: xor_gate port map (a => a, b => b, y => s_xor);
+    u2: and_gate port map (a => a, b => b, y => s_and);
+    
+    sum <= s_xor;
+    carry <= s_and;
+end architecture structural;
+```
+
+#### **Simulação**
+```bash
+ghdl -a half_adder.vhdl
+ghdl -e half_adder
+ghdl -r half_adder --wave=half_adder.ghw
+```
+E depois visualizar no GTKWave:
+```bash
+gtkwave half_adder.ghw
+```
+
+---
+
+### **Resumo dos Estilos de Arquitetura**
+| Estilo        | Característica Principal                                  | Uso Principal  |
+|--------------|------------------------------------------------|--------------|
+| **Data Flow** | Usa expressões booleanas para descrever o circuito. | Equações Lógicas |
+| **Behavioral** | Utiliza `process` e estruturas condicionais. | Máquinas de Estado, Algoritmos |
+| **Structural** | Conecta componentes previamente definidos. | Hierarquia de Circuitos |
+
+Cada estilo pode ser escolhido dependendo da necessidade do projeto. Em geral, a abordagem **Behavioral** é mais usada para **modelagem complexa**, enquanto **Structural** é útil para projetos modulares.
+
+---
+
 
