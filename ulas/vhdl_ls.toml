@@ -1,0 +1,8 @@
+# vhdl_ls.toml
+
+[workspace]
+library = "work"  # Define a biblioteca onde os arquivos de trabalho são compilados.
+
+[compiler]
+# Configurações do compilador. Caso tenha um caminho específico para o GHDL, adicione-o aqui.
+executable = "ghdl"  # ou o caminho completo para o GHDL, se necessário.

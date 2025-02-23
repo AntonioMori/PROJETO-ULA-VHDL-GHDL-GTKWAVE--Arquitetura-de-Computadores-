@@ -1,0 +1,7 @@
+v 4
+file . "add_gate_testbench.vhdl" "e8c6ca6dbb9fca6338b8bade877ad83cf5cf3520" "20250223000353.031":
+  entity add_gate_testbench at 1( 0) + 0 on 15;
+  architecture estructure_architecture of add_gate_testbench at 8( 120) + 0 on 16;
+file . "add_gate.vhdl" "740884c4b3fb90fa5a563e3b6960ded1e53faf49" "20250223000321.626":
+  entity add_gate at 1( 0) + 0 on 13;
+  architecture data_flow of add_gate at 14( 339) + 0 on 14;

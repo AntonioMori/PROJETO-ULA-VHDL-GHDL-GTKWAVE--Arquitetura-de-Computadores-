@@ -19,9 +19,9 @@ architecture estrutuaL_architecture of half_adder_antonio is
 		-- as portas a de input e b de input e vai ter a porta de saída que será o resultado do and
 		component and_gate
         port (
-					a_and_input : in std_logic;
-					b_and_input : in std_logic;
-					y_and_output : out std_logic
+            a_and_input : in std_logic;
+            b_and_input : in std_logic;
+            y_and_output : out std_logic
         );
     end component;
     
@@ -45,9 +45,9 @@ begin
     -- Instanciando os componentes e conectando corretamente
     instancia_and_gate: and_gate 
         port map (
-					a_and_input => a_parcela, 
-					b_and_input => b_parcela, 
-					y_and_output => y_and_result --carry out
+            a_and_input => a_parcela, 
+            b_and_input => b_parcela, 
+            y_and_output => y_and_result --carry out
         );
 
     instancia_xor_gate_antonio: xor_gate_antonio 

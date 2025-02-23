@@ -1,0 +1,7 @@
+v 4
+file . "xor_gate_antonio.vhdl" "b79f0cffa014678cc8825875709dc99a290be21e" "20250223001426.509":
+  entity xor_gate_antonio at 2( 66) + 0 on 19;
+  architecture data_flow of xor_gate_antonio at 15( 407) + 0 on 20;
+file . "xor_gate_antonio_tb.vhdl" "a9eb58363fe591f668e0b27fd40702f2d3de734c" "20250223000824.078":
+  entity xor_gate_antonio_tb at 2( 66) + 0 on 13;
+  architecture estructure_architecture of xor_gate_antonio_tb at 10( 356) + 0 on 14;

@@ -1,0 +1,7 @@
+v 4
+file . "or_gate_testbench.vhdl" "4b211e68503303c98139978c6cc0e923996442b6" "20250223000657.710":
+  entity or_gate_testbench at 2( 30) + 0 on 13;
+  architecture estructure_architecture of or_gate_testbench at 10( 207) + 0 on 14;
+file . "or_gate.vhdl" "066b24078ae287b8d8f56500d87b8baf612d7975" "20250223000644.794":
+  entity or_gate at 1( 0) + 0 on 11;
+  architecture data_flow of or_gate at 13( 209) + 0 on 12;

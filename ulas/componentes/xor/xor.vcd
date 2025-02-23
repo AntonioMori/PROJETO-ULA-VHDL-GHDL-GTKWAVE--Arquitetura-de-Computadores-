@@ -1,5 +1,5 @@
 $date
-  Wed Jan 29 13:49:09 2025
+  Sat Feb 22 21:08:41 2025
 $end
 $version
   GHDL v0
@@ -11,14 +11,14 @@ $scope module standard $end
 $upscope $end
 $scope module std_logic_1164 $end
 $upscope $end
-$scope module and_gate_tb $end
+$scope module xor_gate_antonio_tb $end
 $var reg 1 ! a_signal $end
 $var reg 1 " b_signal $end
-$var reg 1 # y_and_result $end
-$scope module instancia_and_gate $end
-$var reg 1 $ a_input $end
-$var reg 1 % b_input $end
-$var reg 1 & y_output $end
+$var reg 1 # y_xor_result $end
+$scope module instancia_xor_gate_antonio $end
+$var reg 1 $ a_xor_input $end
+$var reg 1 % b_xor_input $end
+$var reg 1 & y_xor_output $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -38,7 +38,9 @@ X&
 0&
 #20000000
 1"
+1#
 1%
+1&
 #30000000
 1!
 0"
@@ -46,7 +48,7 @@ X&
 0%
 #40000000
 1"
-1#
+0#
 1%
-1&
+0&
 #50000000

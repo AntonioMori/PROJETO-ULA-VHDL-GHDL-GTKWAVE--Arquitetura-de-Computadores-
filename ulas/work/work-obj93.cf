@@ -1,0 +1,25 @@
+v 4
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/sub/sub_gate_testbench.vhdl" "3ade58bf3834f8a6353bd39852af855a4f06efef" "20250223004547.699":
+  entity tb_sub_gate at 1( 0) + 0 on 93;
+  architecture behavior of tb_sub_gate at 7( 97) + 0 on 94;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/or/or_gate.vhdl" "066b24078ae287b8d8f56500d87b8baf612d7975" "20250223003215.776":
+  entity or_gate at 1( 0) + 0 on 37;
+  architecture data_flow of or_gate at 13( 209) + 0 on 38;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/half_adder/half_adder_antonio.vhdl" "8ca696243723135ef9a0fd2659dcb83e83028721" "20250223003215.716":
+  entity half_adder_antonio at 2( 74) + 0 on 33;
+  architecture estrutual_architecture of half_adder_antonio at 15( 476) + 0 on 34;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/and/and_gate.vhdl" "cb8c9a60cd09a3247f6a24022bc4406f0f4f5e5d" "20250223004301.980":
+  entity and_gate at 2( 22) + 0 on 87;
+  architecture data_flow of and_gate at 15( 343) + 0 on 88;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/xor/xor_gate_antonio.vhdl" "b79f0cffa014678cc8825875709dc99a290be21e" "20250223003215.626":
+  entity xor_gate_antonio at 2( 66) + 0 on 27;
+  architecture data_flow of xor_gate_antonio at 15( 407) + 0 on 28;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/add/add_gate.vhdl" "740884c4b3fb90fa5a563e3b6960ded1e53faf49" "20250223010457.310":
+  entity add_gate at 1( 0) + 0 on 99;
+  architecture data_flow of add_gate at 14( 339) + 0 on 100;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/inv/inv_gate.vhdl" "aec90ecef77c8f70decf68c5e69e4194756c8ad7" "20250223010440.901":
+  entity inv_gate at 1( 0) + 0 on 97;
+  architecture behavioral of inv_gate at 11( 161) + 0 on 98;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/sub/sub_gate.vhdl" "3fb2265b786fd9d72ff6a9c1e2d59d75e6fc353c" "20250223010535.185":
+  entity sub_gate at 1( 0) + 0 on 101;
+  architecture data_flow of sub_gate at 15( 421) + 0 on 102;

@@ -1,7 +1,0 @@
-v 4
-file . "and_gate_antonio.vhdl" "ae7a3b7dbe60a6d41297544312bfcf3319982efb" "20250129164558.924":
-  entity and_gate_antonio at 2( 55) + 0 on 23;
-  architecture comportamento_do_teste of and_gate_antonio at 14( 331) + 0 on 24;
-file . "and_gate_tb.vhdl" "da1a3988946330c8fb4ac2a4c6b825602160d51d" "20250129164425.286":
-  entity and_gate_tb at 4( 84) + 0 on 21;
-  architecture comportamento_testbench of and_gate_tb at 13( 532) + 0 on 22;

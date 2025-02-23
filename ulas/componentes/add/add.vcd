@@ -1,0 +1,85 @@
+$date
+  Sat Feb 22 21:04:17 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module add_gate_testbench $end
+$var reg 1 ! a_signal $end
+$var reg 1 " b_signal $end
+$var reg 1 # carry_in_signal $end
+$var reg 1 $ y_result $end
+$var reg 1 % carry_out_result $end
+$scope module instancia_add_gate $end
+$var reg 1 & a_add_input $end
+$var reg 1 ' b_add_input $end
+$var reg 1 ( add_carry_in $end
+$var reg 1 ) y_add_output $end
+$var reg 1 * add_carry_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+#10000000
+1#
+1$
+1(
+1)
+#20000000
+1"
+0#
+1'
+0(
+#30000000
+1#
+0$
+1%
+1(
+0)
+1*
+#40000000
+1!
+0"
+0#
+1$
+0%
+1&
+0'
+0(
+1)
+0*
+#50000000
+1#
+0$
+1%
+1(
+0)
+1*
+#60000000
+1"
+0#
+1'
+0(
+#70000000
+1#
+1$
+1(
+1)
+#80000000
