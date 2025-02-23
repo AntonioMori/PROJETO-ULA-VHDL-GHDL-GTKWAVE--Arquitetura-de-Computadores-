@@ -61,11 +61,10 @@ Uma lista de comandos úteis para trabalhar com GHDL e simulações VHDL.
    ghdl -r sua_testbench
    ```
 
----
+
 
 ### Para visualizar a simulação no GTKWave, é necessário converter a saída da testbench para o formato **VCD**. O GHDL facilita essa conversão.
 
----
 
 5. **Realiza a conversão da testbench para o formato VCD**  
    Converte a simulação em VHDL para um arquivo **VCD**, que pode ser visualizado no **GTKWave**.  
@@ -79,25 +78,32 @@ Uma lista de comandos úteis para trabalhar com GHDL e simulações VHDL.
    gtkwave and.vcd
    ```
  ---
-### Para criação dos arquivos .cf na lib work
+### Para criação dos arquivos .cf, compilação e -s
 
-
+No git bash, na pasta ula, coloque o seguinte comando
    ```bash
-ghdl -a --workdir=work componentes/xor/xor_gate_antonio.vhdl 
-ghdl -a --workdir=work componentes/and/and_gate.vhdl 
-ghdl -a --workdir=work componentes/add/add_gate.vhdl 
-ghdl -a --workdir=work componentes/half_adder/half_adder_antonio.vhdl 
-ghdl -a --workdir=work componentes/inv/inv_gate.vhdl 
-ghdl -a --workdir=work componentes/or/or_gate.vhdl 
-ghdl -a --workdir=work componentes/sub/sub_gate.vhdl 
-ghdl -a --workdir=work tests/add_gate_testbench.vhdl 
-ghdl -a --workdir=work tests/and_gate_tb2.vhdl 
-ghdl -a --workdir=work tests/half_adder_antonio_tb.vhdl 
-ghdl -a --workdir=work tests/or_gate_testbench.vhdl 
-ghdl -a --workdir=work tests/sub_gate_testbench.vhdl 
-ghdl -a --workdir=work tests/xor_gate_antonio_tb.vhdl 
+./compile.sh
+
    ```
- ---
+   Em caso de erro faça
+   ```bash
+chmod +x compile.sh
+./compile.sh
+   ```
+ 
+### Para execução dos testes 
+
+No git bash, na pasta ula, coloque o seguinte comando
+   ```bash
+./run_tests.sh
+
+   ```
+   Em caso de erro faça
+   ```bash
+chmod +x run_tests.sh
+./run_tests.sh
+   ```
+ 
 ### O trecho a partir daqui foi gerado com inteligencia artificial 
 
 
