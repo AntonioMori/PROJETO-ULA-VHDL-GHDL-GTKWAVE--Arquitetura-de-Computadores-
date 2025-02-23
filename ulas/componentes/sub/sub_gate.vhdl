@@ -1,19 +1,19 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-use work.
 entity sub_gate is
     port (
         a_sub_input : in std_logic;  -- Operando A
         b_sub_input : in std_logic;  -- Operando B
-        sub_borrow_in : in std_logic;  -- Borrow (usado para o complemento de dois)
+        sub_borrow_in : in std_logic;  -- Borrow In (deve ser 1 para complemento de dois)
         y_sub_output : out std_logic; -- Resultado
-        sub_borrow_out : out std_logic -- Borrow Out ou Carry Out
+        sub_borrow_out : out std_logic -- Borrow Out (inverso do Carry Out)
     );
 end entity sub_gate;
 
 architecture data_flow of sub_gate is
-    signal b_inverted : std_logic;  -- Sinal para armazenar o B invertido
+    signal b_inverted   : std_logic;  -- Sinal para armazenar o B invertido
+    signal temp_carry   : std_logic;  -- Sinal intermediário para o carry gerado pelo add_gate
 
     component inv_gate is
         port (
@@ -26,9 +26,9 @@ architecture data_flow of sub_gate is
         port (
             a_add_input : in std_logic;
             b_add_input : in std_logic;
-            add_carry_in : in std_logic;
-            y_add_output : out std_logic;
-            add_carry_out : out std_logic
+            add_carry_in : in std_logic;  -- Carry In
+            y_add_output : out std_logic; -- Resultado
+            add_carry_out : out std_logic -- Carry Out
         );
     end component;
 
@@ -45,9 +45,11 @@ begin
         port map (
             a_add_input => a_sub_input,
             b_add_input => b_inverted,
-            add_carry_in => sub_borrow_in,  -- Borrow In é 1 quando estamos subtraindo
+            add_carry_in => sub_borrow_in,  -- Borrow In é 1 para efetuar o complemento de dois
             y_add_output => y_sub_output,
-            add_carry_out => sub_borrow_out  -- Carry Out se torna Borrow Out
+            add_carry_out => temp_carry    -- Captura o carry gerado
         );
 
+    -- Inverter o carry para gerar o borrow
+    sub_borrow_out <= not temp_carry;
 end architecture data_flow;

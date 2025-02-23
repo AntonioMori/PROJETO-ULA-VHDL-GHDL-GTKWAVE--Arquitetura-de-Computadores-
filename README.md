@@ -79,6 +79,25 @@ Uma lista de comandos úteis para trabalhar com GHDL e simulações VHDL.
    gtkwave and.vcd
    ```
  ---
+### Para criação dos arquivos .cf na lib work
+
+
+   ```bash
+ghdl -a --workdir=work componentes/xor/xor_gate_antonio.vhdl 
+ghdl -a --workdir=work componentes/and/and_gate.vhdl 
+ghdl -a --workdir=work componentes/add/add_gate.vhdl 
+ghdl -a --workdir=work componentes/half_adder/half_adder_antonio.vhdl 
+ghdl -a --workdir=work componentes/inv/inv_gate.vhdl 
+ghdl -a --workdir=work componentes/or/or_gate.vhdl 
+ghdl -a --workdir=work componentes/sub/sub_gate.vhdl 
+ghdl -a --workdir=work tests/add_gate_testbench.vhdl 
+ghdl -a --workdir=work tests/and_gate_tb2.vhdl 
+ghdl -a --workdir=work tests/half_adder_antonio_tb.vhdl 
+ghdl -a --workdir=work tests/or_gate_testbench.vhdl 
+ghdl -a --workdir=work tests/sub_gate_testbench.vhdl 
+ghdl -a --workdir=work tests/xor_gate_antonio_tb.vhdl 
+   ```
+ ---
 ### O trecho a partir daqui foi gerado com inteligencia artificial 
 
 
