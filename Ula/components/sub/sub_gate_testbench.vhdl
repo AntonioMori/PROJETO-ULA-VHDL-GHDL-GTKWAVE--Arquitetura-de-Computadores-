@@ -14,6 +14,9 @@ architecture behavior of sub_gate_testbench is
 
     -- Declaração do DUT
     component sub_gate
+        generic (
+            FINAL : boolean := false  -- Se true, este é o estágio final da subtração
+        );
         port (
             a_sub_input     : in std_logic;
             b_sub_input     : in std_logic;
@@ -24,6 +27,9 @@ architecture behavior of sub_gate_testbench is
     end component;
 begin
     instancia_sub_gate: sub_gate
+        generic map (
+            FINAL => true -- Important: Set FINAL to true for isolated testing
+        )
         port map (
             a_sub_input    => a_sub_input,
             b_sub_input    => b_sub_input,
