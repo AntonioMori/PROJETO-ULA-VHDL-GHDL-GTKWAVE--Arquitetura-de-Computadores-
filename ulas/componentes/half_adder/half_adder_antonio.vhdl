@@ -15,9 +15,9 @@ end entity half_adder_antonio;
 architecture estrutuaL_architecture of half_adder_antonio is
     -- Referenciando os componentes and_gate e xor_gate_antonio
     
-		-- o componente and referenciado de uma criação em outro arquivo no mesmo diretório vai receber nessa referencia
-		-- as portas a de input e b de input e vai ter a porta de saída que será o resultado do and
-		component and_gate
+    -- o componente and referenciado de uma criação em outro arquivo no mesmo diretório vai receber nessa referencia
+    -- as portas a de input e b de input e vai ter a porta de saída que será o resultado do and
+    component and_gate
         port (
             a_and_input : in std_logic;
             b_and_input : in std_logic;

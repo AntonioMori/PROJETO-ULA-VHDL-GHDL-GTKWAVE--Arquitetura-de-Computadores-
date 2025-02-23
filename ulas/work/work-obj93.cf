@@ -1,43 +1,49 @@
 v 4
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/sub_gate_testbench.vhdl" "952d6b98103793d9c0cd67b5155286910634a7a3" "20250223024825.777":
-  entity sub_gate_testbench at 1( 0) + 0 on 189;
-  architecture behavior of sub_gate_testbench at 7( 111) + 0 on 190;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/half_adder_antonio_tb.vhdl" "f671f5f6219f0394eef1e55ae8ba624b85f90bf9" "20250223024825.708":
-  entity half_adder_antonio_tb at 1( 0) + 0 on 185;
-  architecture estructure_architecture of half_adder_antonio_tb at 9( 156) + 0 on 186;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/add_gate_testbench.vhdl" "e8c6ca6dbb9fca6338b8bade877ad83cf5cf3520" "20250223024825.645":
-  entity add_gate_testbench at 1( 0) + 0 on 181;
-  architecture estructure_architecture of add_gate_testbench at 8( 120) + 0 on 182;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/sub/sub_gate.vhdl" "a333ffc64b823ecdffa3e0e56755d1b212784ff4" "20250223024825.616":
-  entity sub_gate at 1( 0) + 0 on 179;
-  architecture data_flow of sub_gate at 14( 435) + 0 on 180;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/inv/inv_gate.vhdl" "aec90ecef77c8f70decf68c5e69e4194756c8ad7" "20250223024825.546":
-  entity inv_gate at 1( 0) + 0 on 175;
-  architecture behavioral of inv_gate at 11( 161) + 0 on 176;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/add/add_gate.vhdl" "740884c4b3fb90fa5a563e3b6960ded1e53faf49" "20250223024825.452":
-  entity add_gate at 1( 0) + 0 on 171;
-  architecture data_flow of add_gate at 14( 339) + 0 on 172;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/xor/xor_gate_antonio.vhdl" "b79f0cffa014678cc8825875709dc99a290be21e" "20250223024825.384":
-  entity xor_gate_antonio at 2( 66) + 0 on 167;
-  architecture data_flow of xor_gate_antonio at 15( 407) + 0 on 168;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/and/and_gate.vhdl" "cb8c9a60cd09a3247f6a24022bc4406f0f4f5e5d" "20250223024825.425":
-  entity and_gate at 2( 22) + 0 on 169;
-  architecture data_flow of and_gate at 15( 343) + 0 on 170;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/half_adder/half_adder_antonio.vhdl" "8ca696243723135ef9a0fd2659dcb83e83028721" "20250223024825.492":
-  entity half_adder_antonio at 2( 74) + 0 on 173;
-  architecture estrutual_architecture of half_adder_antonio at 15( 476) + 0 on 174;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/or/or_gate.vhdl" "066b24078ae287b8d8f56500d87b8baf612d7975" "20250223024825.583":
-  entity or_gate at 1( 0) + 0 on 177;
-  architecture data_flow of or_gate at 13( 209) + 0 on 178;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/sub/sub_gate_testbench.vhdl" "3ade58bf3834f8a6353bd39852af855a4f06efef" "20250223004547.699":
-  entity tb_sub_gate at 1( 0) + 0 on 93;
-  architecture behavior of tb_sub_gate at 7( 97) + 0 on 94;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/and_gate_tb2.vhdl" "3d9b805047e7a57fb46b82fb203fbbf926ddc252" "20250223024825.679":
-  entity and_gate_tb2 at 2( 47) + 0 on 183;
-  architecture estructure_architecture of and_gate_tb2 at 9( 182) + 0 on 184;
-file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/or_gate_testbench.vhdl" "4b211e68503303c98139978c6cc0e923996442b6" "20250223024825.741":
-  entity or_gate_testbench at 2( 30) + 0 on 187;
-  architecture estructure_architecture of or_gate_testbench at 10( 207) + 0 on 188;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/ula_1_bit/ula_1_bit.vhdl" "3509dc0d93c704b1e6205f59e8fa3931a48b52bd" "20250223161931.050":
+  entity ula_1_bit at 1( 0) + 0 on 197;
+  architecture behavioral of ula_1_bit at 16( 452) + 0 on 198;
 file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/xor_gate_antonio_tb.vhdl" "a9eb58363fe591f668e0b27fd40702f2d3de734c" "20250223024825.809":
   entity xor_gate_antonio_tb at 2( 66) + 0 on 191;
   architecture estructure_architecture of xor_gate_antonio_tb at 10( 356) + 0 on 192;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/or_gate_testbench.vhdl" "4b211e68503303c98139978c6cc0e923996442b6" "20250223024825.741":
+  entity or_gate_testbench at 2( 30) + 0 on 187;
+  architecture estructure_architecture of or_gate_testbench at 10( 207) + 0 on 188;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/and_gate_tb2.vhdl" "3d9b805047e7a57fb46b82fb203fbbf926ddc252" "20250223024825.679":
+  entity and_gate_tb2 at 2( 47) + 0 on 183;
+  architecture estructure_architecture of and_gate_tb2 at 9( 182) + 0 on 184;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/sub/sub_gate_testbench.vhdl" "3ade58bf3834f8a6353bd39852af855a4f06efef" "20250223004547.699":
+  entity tb_sub_gate at 1( 0) + 0 on 93;
+  architecture behavior of tb_sub_gate at 7( 97) + 0 on 94;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/or/or_gate.vhdl" "066b24078ae287b8d8f56500d87b8baf612d7975" "20250223162244.754":
+  entity or_gate at 1( 0) + 0 on 211;
+  architecture data_flow of or_gate at 13( 209) + 0 on 212;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/half_adder/half_adder_antonio.vhdl" "f781a4399dcac302c8174cbe94e00d47399fb83b" "20250223162244.678":
+  entity half_adder_antonio at 2( 74) + 0 on 207;
+  architecture estrutual_architecture of half_adder_antonio at 15( 476) + 0 on 208;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/and/and_gate.vhdl" "cb8c9a60cd09a3247f6a24022bc4406f0f4f5e5d" "20250223162244.611":
+  entity and_gate at 2( 22) + 0 on 203;
+  architecture data_flow of and_gate at 15( 343) + 0 on 204;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/xor/xor_gate_antonio.vhdl" "b79f0cffa014678cc8825875709dc99a290be21e" "20250223162244.578":
+  entity xor_gate_antonio at 2( 66) + 0 on 201;
+  architecture data_flow of xor_gate_antonio at 15( 407) + 0 on 202;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/add/add_gate.vhdl" "740884c4b3fb90fa5a563e3b6960ded1e53faf49" "20250223162244.638":
+  entity add_gate at 1( 0) + 0 on 205;
+  architecture data_flow of add_gate at 14( 339) + 0 on 206;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/inv/inv_gate.vhdl" "aec90ecef77c8f70decf68c5e69e4194756c8ad7" "20250223162244.718":
+  entity inv_gate at 1( 0) + 0 on 209;
+  architecture behavioral of inv_gate at 11( 161) + 0 on 210;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "componentes/sub/sub_gate.vhdl" "a333ffc64b823ecdffa3e0e56755d1b212784ff4" "20250223162244.789":
+  entity sub_gate at 1( 0) + 0 on 213;
+  architecture data_flow of sub_gate at 14( 435) + 0 on 214;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/add_gate_testbench.vhdl" "e8c6ca6dbb9fca6338b8bade877ad83cf5cf3520" "20250223024825.645":
+  entity add_gate_testbench at 1( 0) + 0 on 181;
+  architecture estructure_architecture of add_gate_testbench at 8( 120) + 0 on 182;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/half_adder_antonio_tb.vhdl" "f671f5f6219f0394eef1e55ae8ba624b85f90bf9" "20250223024825.708":
+  entity half_adder_antonio_tb at 1( 0) + 0 on 185;
+  architecture estructure_architecture of half_adder_antonio_tb at 9( 156) + 0 on 186;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/sub_gate_testbench.vhdl" "952d6b98103793d9c0cd67b5155286910634a7a3" "20250223024825.777":
+  entity sub_gate_testbench at 1( 0) + 0 on 189;
+  architecture behavior of sub_gate_testbench at 7( 111) + 0 on 190;
+file "C:\Users\ITEMM - DEV\Desktop\Repositorios\PROJETO ULA VHDL-GHDL-GTKWAVE\ulas\" "tests/ula_1_bit_testbench.vhdl" "1ab3f69f8454bb9c5829e4d7061b49cfb65c0b94" "20250223162000.009":
+  entity tb_ula_1_bit at 1( 0) + 0 on 199;
+  architecture testbench of tb_ula_1_bit at 7( 99) + 0 on 200;
