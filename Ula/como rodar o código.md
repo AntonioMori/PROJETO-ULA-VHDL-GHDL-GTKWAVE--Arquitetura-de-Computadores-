@@ -23,7 +23,7 @@ chmod +x compile.sh
  
 ## Para execução dos testes
 
-No ***git bash***, na pasta ula, coloque o seguinte comando
+No ***git bash***, de um cd na pasta "ula" e coloque o seguinte comando
    ```bash
 ./run_tests.sh
 

@@ -100,7 +100,7 @@ begin
         assert (y_ula_output = "0000" and c_ula_carry_out = '1')
             report "Erro ADD: 1111 + 0001 deveria ser 0000 com carry 1" severity error;
 
-        ---------------------------------------------------------------------
+       ---------------------------------------------------------------------
         -- Testes para operação SUB (op_ula = "10")
         -- Para SUB, usa-se Carry In = '1' para efetuar o complemento de dois.
         ---------------------------------------------------------------------
@@ -117,7 +117,7 @@ begin
 
         -- Teste SUB 2:
         -- A = "0010" (2), B = "0100" (4), Carry In = '1'
-        -- Subtração: 2 - 4 = -2 (em 4 bits, -2 é representado por "1110")
+        -- Subtração: 2 - 4 = -2 -> Em 4 bits, -2 é representado por "1110"
         -- Resultado esperado: "1110", Borrow Out: '1'
         a_ula_input     <= "0010";
         b_ula_input     <= "0100";
@@ -125,7 +125,7 @@ begin
         op_ula          <= "10";
         wait for 10 ns;
         assert (y_ula_output = "1110" and c_ula_carry_out = '1')
-            report "Erro SUB: 0010 - 0100 deveria ser 1110" severity error;
+						report "Erro SUB: 0010 - 0100 deveria ser 1110" severity error;
 
         -- Finaliza o teste
         wait;

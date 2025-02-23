@@ -2,21 +2,24 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity ula_4_bits is
+    generic (
+        FINAL_STAGE : boolean := false
+    );
     port (
         a_ula_input    : in  std_logic_vector(3 downto 0);  -- Operando A (4 bits)
         b_ula_input    : in  std_logic_vector(3 downto 0);  -- Operando B (4 bits)
         c_ula_carry_in : in  std_logic;                     -- Carry In inicial
-        op_ula         : in  std_logic_vector(1 downto 0);  -- Seletor de operação: "00" para AND,"11" para OR, "01" para ADD,"10" para SUB
+        op_ula         : in  std_logic_vector(1 downto 0);  -- Seletor de operação:
         y_ula_output   : out std_logic_vector(3 downto 0);  -- Resultado (4 bits)
         c_ula_carry_out: out std_logic                      -- Carry Out final
     );
 end entity ula_4_bits;
 
 architecture behavioral of ula_4_bits is
-    -- Sinal para interligar os carries das ULAs de 1 bit
+    -- Vetor para interligar os sinais de carry entre as ULAs de 1 bit
     signal carry : std_logic_vector(4 downto 0);
 begin
-    -- O carry de entrada é o primeiro elemento do vetor de carry
+    -- A entrada do carry para o primeiro bit é o carry in da ULA de 4 bits.
     carry(0) <= c_ula_carry_in;
 
     -- Instância para o bit 0 (LSB)
@@ -54,6 +57,9 @@ begin
 
     -- Instância para o bit 3 (MSB)
     ULA_bit3: entity work.ula_1_bit
+        generic map (
+            FINAL_STAGE => true  -- Para o último bit, definimos FINAL_STAGE como true
+        )
         port map (
             a_ula_input    => a_ula_input(3),
             b_ula_input    => b_ula_input(3),
@@ -63,6 +69,7 @@ begin
             c_ula_carry_out=> carry(4)
         );
 
-    -- O último carry é a saída final da ULA de 4 bits
+
+    -- O último carry gerado é a saída final da ULA de 4 bits
     c_ula_carry_out <= carry(4);
 end architecture behavioral;
