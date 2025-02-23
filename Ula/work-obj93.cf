@@ -1,52 +1,52 @@
 v 4
-file . "components/xor/xor_gate_antonio_tb.vhdl" "a9eb58363fe591f668e0b27fd40702f2d3de734c" "20250223220039.062":
+file . "components/xor/xor_gate_antonio_tb.vhdl" "a9eb58363fe591f668e0b27fd40702f2d3de734c" "20250223221649.382":
   entity xor_gate_antonio_tb at 2( 66) + 0 on 43;
   architecture estructure_architecture of xor_gate_antonio_tb at 10( 356) + 0 on 44;
-file . "components/ula_1_bit/ula_1_bit_testbench.vhdl" "1ab3f69f8454bb9c5829e4d7061b49cfb65c0b94" "20250223220038.967":
+file . "components/ula_1_bit/ula_1_bit_testbench.vhdl" "1ab3f69f8454bb9c5829e4d7061b49cfb65c0b94" "20250223221649.282":
   entity tb_ula_1_bit at 1( 0) + 0 on 39;
   architecture testbench of tb_ula_1_bit at 7( 99) + 0 on 40;
-file . "components/or/or_gate_testbench.vhdl" "4b211e68503303c98139978c6cc0e923996442b6" "20250223220038.877":
+file . "components/or/or_gate_testbench.vhdl" "4b211e68503303c98139978c6cc0e923996442b6" "20250223221649.187":
   entity or_gate_testbench at 2( 30) + 0 on 35;
   architecture estructure_architecture of or_gate_testbench at 10( 207) + 0 on 36;
-file . "components/and/and_gate_tb2.vhdl" "3d9b805047e7a57fb46b82fb203fbbf926ddc252" "20250223220038.782":
+file . "components/and/and_gate_tb2.vhdl" "3d9b805047e7a57fb46b82fb203fbbf926ddc252" "20250223221649.100":
   entity and_gate_tb2 at 2( 47) + 0 on 31;
   architecture estructure_architecture of and_gate_tb2 at 9( 182) + 0 on 32;
-file . "components/xor/xor_gate_antonio.vhdl" "b79f0cffa014678cc8825875709dc99a290be21e" "20250223220038.685":
+file . "components/xor/xor_gate_antonio.vhdl" "b79f0cffa014678cc8825875709dc99a290be21e" "20250223221649.011":
   entity xor_gate_antonio at 2( 66) + 0 on 27;
   architecture data_flow of xor_gate_antonio at 15( 407) + 0 on 28;
-file . "components/ula_1_bit/ula_1_bit.vhdl" "7a8a4eca91654da93e40027dda51a40cd4cac6c4" "20250223220038.602":
+file . "components/ula_1_bit/ula_1_bit.vhdl" "7a8a4eca91654da93e40027dda51a40cd4cac6c4" "20250223221648.921":
   entity ula_1_bit at 1( 0) + 0 on 23;
   architecture behavioral of ula_1_bit at 19( 425) + 0 on 24;
-file . "components/or/or_gate.vhdl" "066b24078ae287b8d8f56500d87b8baf612d7975" "20250223220038.505":
+file . "components/or/or_gate.vhdl" "066b24078ae287b8d8f56500d87b8baf612d7975" "20250223221648.838":
   entity or_gate at 1( 0) + 0 on 19;
   architecture data_flow of or_gate at 13( 209) + 0 on 20;
-file . "components/half_adder/half_adder_antonio.vhdl" "f781a4399dcac302c8174cbe94e00d47399fb83b" "20250223220038.415":
+file . "components/half_adder/half_adder_antonio.vhdl" "f781a4399dcac302c8174cbe94e00d47399fb83b" "20250223221648.738":
   entity half_adder_antonio at 2( 74) + 0 on 15;
   architecture estrutual_architecture of half_adder_antonio at 15( 476) + 0 on 16;
-file . "components/add/add_gate.vhdl" "740884c4b3fb90fa5a563e3b6960ded1e53faf49" "20250223220038.320":
+file . "components/add/add_gate.vhdl" "740884c4b3fb90fa5a563e3b6960ded1e53faf49" "20250223221648.646":
   entity add_gate at 1( 0) + 0 on 11;
   architecture data_flow of add_gate at 14( 339) + 0 on 12;
-file . "components/and/and_gate.vhdl" "cb8c9a60cd09a3247f6a24022bc4406f0f4f5e5d" "20250223220038.366":
+file . "components/and/and_gate.vhdl" "cb8c9a60cd09a3247f6a24022bc4406f0f4f5e5d" "20250223221648.693":
   entity and_gate at 2( 22) + 0 on 13;
   architecture data_flow of and_gate at 15( 343) + 0 on 14;
-file . "components/inv/inv_gate.vhdl" "aec90ecef77c8f70decf68c5e69e4194756c8ad7" "20250223220038.460":
+file . "components/inv/inv_gate.vhdl" "aec90ecef77c8f70decf68c5e69e4194756c8ad7" "20250223221648.789":
   entity inv_gate at 1( 0) + 0 on 17;
   architecture behavioral of inv_gate at 11( 161) + 0 on 18;
-file . "components/sub/sub_gate.vhdl" "68aefc73779837aefac46a564662b4b7cebaf6c9" "20250223220038.559":
+file . "components/sub/sub_gate.vhdl" "68aefc73779837aefac46a564662b4b7cebaf6c9" "20250223221648.880":
   entity sub_gate at 1( 0) + 0 on 21;
   architecture behavioral of sub_gate at 17( 607) + 0 on 22;
-file . "components/ula_4_bits/ula_4_bits.vhdl" "75e9e90bf04b78e59b31c38a6151ec0b42a700c4" "20250223220038.643":
+file . "components/ula_4_bits/ula_4_bits.vhdl" "75e9e90bf04b78e59b31c38a6151ec0b42a700c4" "20250223221648.964":
   entity ula_4_bits at 1( 0) + 0 on 25;
   architecture behavioral of ula_4_bits at 18( 675) + 0 on 26;
-file . "components/add/add_gate_testbench.vhdl" "e8c6ca6dbb9fca6338b8bade877ad83cf5cf3520" "20250223220038.734":
+file . "components/add/add_gate_testbench.vhdl" "e8c6ca6dbb9fca6338b8bade877ad83cf5cf3520" "20250223221649.057":
   entity add_gate_testbench at 1( 0) + 0 on 29;
   architecture estructure_architecture of add_gate_testbench at 8( 120) + 0 on 30;
-file . "components/half_adder/half_adder_antonio_tb.vhdl" "f671f5f6219f0394eef1e55ae8ba624b85f90bf9" "20250223220038.829":
+file . "components/half_adder/half_adder_antonio_tb.vhdl" "f671f5f6219f0394eef1e55ae8ba624b85f90bf9" "20250223221649.144":
   entity half_adder_antonio_tb at 1( 0) + 0 on 33;
   architecture estructure_architecture of half_adder_antonio_tb at 9( 156) + 0 on 34;
-file . "components/sub/sub_gate_testbench.vhdl" "a816079f4b01b122f74534d1f08ca1d34ef34d58" "20250223220038.922":
+file . "components/sub/sub_gate_testbench.vhdl" "a816079f4b01b122f74534d1f08ca1d34ef34d58" "20250223221649.233":
   entity sub_gate_testbench at 1( 0) + 0 on 37;
   architecture behavior of sub_gate_testbench at 7( 111) + 0 on 38;
-file . "components/ula_4_bits/ula_4_bits_testbench.vhdl" "f04b23d96dbb13e96428b461ccb459db14949d82" "20250223220039.016":
+file . "components/ula_4_bits/ula_4_bits_testbench.vhdl" "f04b23d96dbb13e96428b461ccb459db14949d82" "20250223221649.327":
   entity ula_4_bits_testbench at 1( 0) + 0 on 41;
   architecture behavior of ula_4_bits_testbench at 7( 115) + 0 on 42;
